@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;   
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  main {
+    text-align: center;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .box {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background 0.3s;
+    cursor: pointer;
+  }
+  
+  .box:hover {
+    background: #f1f1f1;
+    transform: scale(1.05);
+  }
+  #button {
+    margin-top: 25px;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #11261f, #185a9d);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  #button:hover {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    transform: scale(1.05);
+  }
+  #btn-newBtn{
+    margin-top: 25px;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #11261f, #185a9d);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+  }
+  #btn-newBtn:hover{
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    transform: scale(1.05);
+  }
+  #winner-text{
+    color:#ffffc7;
+    font-size: 5vmin;
+  }
+  .msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: 4rem;
+  }
+  .hide{
+    display: none;
+  }
